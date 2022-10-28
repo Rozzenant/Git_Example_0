@@ -1,20 +1,20 @@
-from abc import ABC, abstractmethod
-
-
-class Base(ABC):
-    def __init__(self):
-        self.a = None
-        self.b = None
-        self.S = None
-
-    @abstractmethod
-    def square(self):
-        return self.S
+from math import sqrt
+from Classes.Triangle import Triangle
+from Classes.Square import Square
 
 def main(status):
-    print(status)
+    print(status, end='\n\n')
+
+    Tr0 = Triangle(10,6,9)
+    print(Tr0)
+    del Tr0
+    print()
+
+    Sq0 = Square(10, 15)
+    print(Sq0)
+    del Sq0
 
 if __name__ == '__main__':
-    main('Success - code 0')
+    main('Running...')
 
 
