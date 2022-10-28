@@ -1,4 +1,3 @@
-from math import sqrt
 from Classes.Triangle import Triangle
 from Classes.Square import Square
 
